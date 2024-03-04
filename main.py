@@ -50,7 +50,6 @@ class Polynom:
         return result
 
     def get_coef(self, pwr):
-        #return self._data.get(pwr, 0.0)
         if pwr in self.__data:
             return self.__data[pwr]
         else:
@@ -63,7 +62,6 @@ class Polynom:
     def get_powers(self):
         return self.__data.keys()
 
-    @staticmethod
     def add(p1, p2):
         r = {}
         powers1 = p1.get_powers()
